@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "title": "Sleep Story",
+      "author": "John Merino",
+      "content": "Now blessings light on him that first invented this same sleep: it covers a man all over, thoughts and all, like a cloak; 'Tis meat for the hungry, drink for the thirsty, heat for the cold, and cold for the hot. 'Tis the current coin that purchases all the pleasures of the world cheap; and the balance that sets the king and the shepherd, the fool and the wise man even. There is only one thing that I dislike in sleep; 'Tis that it resembles death.” ­- Don Quixote“I have to practice staying ali...",
+      "id": 1
+    },
+    {
+      "title": "Straw, Sticks, and Brick",
+      "author": "Kevin Broccoli",
+      "content": "Sejong swept his books off the shelf. Rain pelted the world outside. The king opened one of his many works, the spine of it splitting under his force, and read off a page. Nongsa jikseol, methods of cultivation in agriculture. A guidebook to farming in Korea’s geography.",
+      "id": 2
+    },
+    {
+      "title": "28 Letters",
+      "author": "Alex Sultan",
+      "content": "The noise is assaulting. Weeks of daytime solitude have left me unprepared for the hustle and bustle of the room. A handful of mothers sit on the floor playing blocks with their toddlers. A group of preschoolers squabble over a pram. Two mothers snatch a conversation, while one ignores the snotty nosed toddler clinging to her leg.",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
