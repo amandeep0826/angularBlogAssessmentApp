@@ -10,6 +10,8 @@ import { CreateBlogComponent } from './create-blog/create-blog.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
+import { BlogCardListComponent } from './blog-card-list/blog-card-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
     CreateBlogComponent,
     HomeComponent,
     BannerComponent,
-    FeaturedBlogComponent
+    FeaturedBlogComponent,
+    BlogCardComponent,
+    BlogCardListComponent
   ],
   imports: [
     BrowserModule,

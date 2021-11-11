@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-featured-blog',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./featured-blog.component.css']
 })
 export class FeaturedBlogComponent implements OnInit {
+
+  @Input() featuredPostData: any
 
   constructor() { }
 
