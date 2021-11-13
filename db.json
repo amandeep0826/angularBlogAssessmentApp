@@ -3,48 +3,60 @@
     {
       "title": "Vehicle miniatures are the favorites not only of children but also of many adults",
       "author": "Daniel James",
+      "authorInfo": "Daniel Owen James is a professional footballer who plays as a winger for Premier League club Leeds United and the Wales national team. James made his professional debut for Swansea City in February 2018, and signed for Manchester United in June 2019.",
       "category": "business",
       "date": "March 15, 2018",
+      "hashtags": "#Cars #Children",
       "content": "Now blessings light on him that first invented this same sleep: it covers a man all over, thoughts and all, like a cloak; 'Tis meat for the hungry, drink for the thirsty, heat for the cold, and cold for the hot. 'Tis the current coin that purchases all the pleasures of the world cheap; and the balance that sets the king and the shepherd, the fool and the wise man even. There is only one thing that I dislike in sleep; 'Tis that it resembles death.” ­- Don Quixote“I have to practice staying ali...",
       "id": 1
     },
     {
       "title": "How a good team can positively influence your business",
       "author": "Jadon Sancho",
+      "authorInfo": "Jadon Malik Sancho is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team. He is known for his trickery, pace and use of feints in one-on-one situations.",
       "category": "business",
       "date": "September 18, 2019",
+      "hashtags": "#Lazy #Chill",
       "content": "Sejong swept his books off the shelf. Rain pelted the world outside. The king opened one of his many works, the spine of it splitting under his force, and read off a page. Nongsa jikseol, methods of cultivation in agriculture. A guidebook to farming in Korea’s geography.",
       "id": 2
     },
     {
       "title": "Successful analysis can become the key to your business success",
       "author": "Marcus Rashford",
+      "authorInfo": "Marcus Rashford MBE is an English professional footballer who plays as a forward for Premier League club Manchester United and the England national team.",
       "category": "business",
       "date": "October 12, 2019",
+      "hashtags": "#Aesthetic #Fun",
       "content": "The noise is assaulting. Weeks of daytime solitude have left me unprepared for the hustle and bustle of the room. A handful of mothers sit on the floor playing blocks with their toddlers. A group of preschoolers squabble over a pram. Two mothers snatch a conversation, while one ignores the snotty nosed toddler clinging to her leg.",
       "id": 3
     },
     {
       "title": "Good partnerships can help your company achieve better results",
       "author": "Harvey Barnes",
+      "authorInfo": "Harvey Lewis Barnes is an English professional footballer who plays as a winger for Premier League club Leicester City and the England national team.",
       "category": "business",
       "date": "August 5, 2018",
+      "hashtags": "#DIY #Special",
       "content": "The noise is assaulting. Weeks of daytime solitude have left me unprepared for the hustle and bustle of the room. A handful of mothers sit on the floor playing blocks with their toddlers. A group of preschoolers squabble over a pram. Two mothers snatch a conversation, while one ignores the snotty nosed toddler clinging to her leg.",
       "id": 4
     },
     {
       "title": "Methods that can help you use your credit card more safely",
       "author": "Jamie Vardy",
+      "authorInfo": "Jamie Richard Vardy is an English professional footballer who plays as a striker for Premier League club Leicester City. Vardy has also played for the England national team.",
       "category": "business",
       "date": "June 26, 2019",
+      "hashtags": "#Football #Fashion",
       "content": "The noise is assaulting. Weeks of daytime solitude have left me unprepared for the hustle and bustle of the room. A handful of mothers sit on the floor playing blocks with their toddlers. A group of preschoolers squabble over a pram. Two mothers snatch a conversation, while one ignores the snotty nosed toddler clinging to her leg.",
       "id": 5
     },
     {
       "title": "See some alternatives to bitcoin that can be a good investment",
       "author": "James Maddison",
+      "authorInfo": "James Daniel Maddison is an English professional footballer who plays as an attacking midfielder for Premier League club Leicester City and the England national team. Maddison began his career with Coventry City before joining Norwich City in 2016.",
       "category": "bitcoin",
       "date": "May 23, 2018",
+      "hashtags": "#Bike #Senior",
       "content": "The noise is assaulting. Weeks of daytime solitude have left me unprepared for the hustle and bustle of the room. A handful of mothers sit on the floor playing blocks with their toddlers. A group of preschoolers squabble over a pram. Two mothers snatch a conversation, while one ignores the snotty nosed toddler clinging to her leg.",
       "id": 6
     }
@@ -53,6 +65,7 @@
     {
       "id": 1,
       "body": "some comment",
+      "author": "Justin Wang",
       "postId": 1
     }
   ],

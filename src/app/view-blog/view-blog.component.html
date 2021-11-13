@@ -15,7 +15,7 @@
         margin-bottom: 5px;
         color: #5e26cd; ;
       "
-      >BITCOIN</label
+      >{{ blogDetail.category | uppercase }}</label
     >
     <span style="display: inline-block; width: 5px"></span>
     <label>/</label>
@@ -28,7 +28,7 @@
         margin-bottom: 10px;
       "
     >
-      December 9, 2018</label
+      {{ blogDetail.date }}</label
     >
   </div>
   <div>
@@ -39,7 +39,7 @@
         margin-bottom: 30px;
       "
     >
-      See some alternatives to bitcoin that can be a good investment
+      {{ blogDetail.title }}
     </h3>
   </div>
   <div>
@@ -47,21 +47,6 @@
       src="../../assets/nature1.jpeg"
       style="width: 100%; height: 100%; margin-bottom: 1em"
     />
-    <div>
-      <h6
-        style="
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-            sans-serif;
-          margin-bottom: 20px;
-          font-weight: lighter;
-        "
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen bo…
-      </h6>
-    </div>
     <div class="d-flex" style="margin-bottom: 20px">
       <div style="background-color: #27ae60; width: 10px"></div>
       <h6 style="margin-left: 10px">
@@ -79,40 +64,7 @@
           font-weight: lighter;
         "
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen bo…
-      </h6>
-    </div>
-    <div>
-      <h6
-        style="
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-            sans-serif;
-          margin-bottom: 20px;
-          font-weight: lighter;
-        "
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen bo…
-      </h6>
-    </div>
-    <div>
-      <h6
-        style="
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-            sans-serif;
-          margin-bottom: 20px;
-          font-weight: lighter;
-        "
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen bo…
+        {{ blogDetail.content }}
       </h6>
     </div>
   </div>
@@ -125,29 +77,7 @@
         font-weight: lighter;
         color: #5e26cd; ;
       "
-      >#Cars</label
-    >
-    <span style="display: inline-block; width: 5px"></span>
-    <label
-      style="
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-          sans-serif;
-        margin-bottom: 20px;
-        font-weight: lighter;
-        color: #5e26cd; ;
-      "
-      >#Children</label
-    >
-    <span style="display: inline-block; width: 5px"></span>
-    <label
-      style="
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-          sans-serif;
-        margin-bottom: 20px;
-        font-weight: lighter;
-        color: #5e26cd; ;
-      "
-      >#Toys</label
+      >{{ blogDetail.hashtags }}</label
     >
   </div>
   <div class="d-flex">
@@ -172,9 +102,9 @@
         class="d-flex"
       >
         <label style="font-weight: bold">Posted by</label>
-        <label style="margin-left: 5px; font-weight: bold; color: #5e26cd"
-          >Sora Bloggin Tips</label
-        >
+        <label style="margin-left: 5px; font-weight: bold; color: #5e26cd">{{
+          blogDetail.author
+        }}</label>
       </div>
       <div
         style="
@@ -184,10 +114,7 @@
           font-weight: lighter;
         "
       >
-        <label
-          >SoraBloggingTips Is A Site Where You Find Unique And High-Quality
-          Professional Blogger Templates For Free.</label
-        >
+        <label>{{ blogDetail.authorInfo }}</label>
       </div>
     </div>
   </div>
