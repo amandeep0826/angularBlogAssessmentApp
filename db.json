@@ -67,6 +67,36 @@
       "body": "some comment",
       "author": "Justin Wang",
       "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "author": "Justin Wang",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "body": "some comment",
+      "author": "Justin Wang",
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "body": "some comment",
+      "author": "Justin Wang",
+      "postId": 1
+    },
+    {
+      "id": 5,
+      "body": "some comment",
+      "author": "Justin Wang",
+      "postId": 1
+    },
+    {
+      "id": 6,
+      "body": "some comment",
+      "author": "Justin Wang",
+      "postId": 1
     }
   ],
   "profile": {
