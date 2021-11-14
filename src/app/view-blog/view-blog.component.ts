@@ -27,7 +27,7 @@ export class ViewBlogComponent implements OnInit {
     })
 
     var commentId = this.route.snapshot.params.blogId
-    var url = "http://localhost:3000/comments?postId" + commentId
+    var url = "http://localhost:3000/comments?postId=" + commentId
     this.http.get(url).subscribe((response: any) => {
       console.log("Response from comments api", response)
       this.comments = response
