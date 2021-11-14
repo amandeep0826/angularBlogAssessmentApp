@@ -14,6 +14,7 @@ import { BannerComponent } from './banner/banner.component';
 import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { BlogCardListComponent } from './blog-card-list/blog-card-list.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BlogCardListComponent } from './blog-card-list/blog-card-list.component
     BannerComponent,
     FeaturedBlogComponent,
     BlogCardComponent,
-    BlogCardListComponent
+    BlogCardListComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
