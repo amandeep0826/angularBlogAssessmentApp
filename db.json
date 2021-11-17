@@ -97,12 +97,6 @@
       "body": "some comment",
       "author": "Justin Wang",
       "postId": 1
-    },
-    {
-      "body": "test comment",
-      "author": "Elon Musk",
-      "postId": 3,
-      "id": 7
     }
   ],
   "profile": {
