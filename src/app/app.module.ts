@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxUiLoaderModule } from "ngx-ui-loader";
+import { FormsModule } from "@angular/forms"
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { FeaturedBlogComponent } from './featured-blog/featured-blog.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { BlogCardListComponent } from './blog-card-list/blog-card-list.component';
 import { CommentsComponent } from './comments/comments.component';
+import { EditBlogComponent } from './edit-blog/edit-blog.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { CommentsComponent } from './comments/comments.component';
     FeaturedBlogComponent,
     BlogCardComponent,
     BlogCardListComponent,
-    CommentsComponent
+    CommentsComponent,
+    EditBlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxUiLoaderModule
+    NgxUiLoaderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

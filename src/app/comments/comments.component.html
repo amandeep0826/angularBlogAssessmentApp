@@ -85,6 +85,7 @@
           </h6>
           <input
             placeholder="Your Name"
+            [(ngModel)]="commentatorName"
             style="
               border-radius: 5em;
               border-width: 1px;
@@ -98,6 +99,7 @@
         </div>
         <input
           placeholder="Enter your comment"
+          [(ngModel)]="commentText"
           style="
             border-radius: 5em;
             border-width: 1px;
@@ -125,6 +127,8 @@
           height: 30px;
           margin-left: auto;
         "
+        (click)="postComment()"
+        type="submit"
       >
         Post
       </button>
