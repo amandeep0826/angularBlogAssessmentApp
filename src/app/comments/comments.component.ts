@@ -43,13 +43,14 @@ export class CommentsComponent implements OnInit {
     var url = "http://localhost:3000/comments"
     this.loader.start()
     this.http.post(url, requestJson).subscribe((response: any) => {
+      location.reload();
       this.loader.stop();
       console.log("Response from post comment api", response)
     }, (error) => {
+      location.reload();
       this.loader.stop();
       console.log("Error from post comment api", error)
     })
-    // console.log("Post id is", this.commentIdInt)
   }
 
 }

@@ -97,6 +97,24 @@
       "body": "some comment",
       "author": "Justin Wang",
       "postId": 1
+    },
+    {
+      "body": "nice work",
+      "author": "Justin",
+      "postId": 2,
+      "id": 7
+    },
+    {
+      "body": "yes working",
+      "author": "Working",
+      "postId": 2,
+      "id": 8
+    },
+    {
+      "body": "Yo bro",
+      "author": "MyName",
+      "postId": 2,
+      "id": 9
     }
   ],
   "profile": {
