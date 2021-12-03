@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'create-blog', component: CreateBlogComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'blog-card/:blogId', component: ViewBlogComponent },
+  { path: 'view-blog/:blogId', component: ViewBlogComponent },
   { path: 'edit-blog/:blogIdEditBlog', component: EditBlogComponent }
 ];
 
