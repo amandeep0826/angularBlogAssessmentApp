@@ -11,13 +11,13 @@
       "id": 1
     },
     {
-      "title": "How a good team can positively influence your work",
-      "author": "Jadon Sancho",
-      "authorInfo": "Jadon Malik Sancho is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team. He is known for his trickery, pace and use of feints in one-on-one situations.",
-      "category": "business",
+      "title": "How a good team can positively influence your work and social life",
+      "author": "Dustin Trafford",
+      "authorInfo": "Jadon Malik Sancho is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team. He is known for his trickery, pace and use of feints in one-on-one situations. Nice player all around",
+      "category": "Crypto",
       "date": "September 18, 2019",
-      "hashtags": "#Lazy #Chill",
-      "content": "Sejong swept his books off the shelf. Rain pelted the world outside. The king opened one of his many works, the spine of it splitting under his force, and read off a page. Nongsa jikseol, methods of cultivation in agriculture. A guidebook to farming in Korea’s geography.",
+      "hashtags": "#Lazy #Chill #Nice",
+      "content": "Sejong swept his books off the shelf. Rain pelted the world outside. The king opened one of his many works, the spine of it splitting under his force, and read off a page. Nongsa jikseol, methods of cultivation in agriculture. A guidebook to farming in Korea’s geography. Nice new text.",
       "id": 2
     },
     {
@@ -79,6 +79,12 @@
       "author": "MyName",
       "postId": 2,
       "id": 9
+    },
+    {
+      "body": "How are you Avengers",
+      "author": "Hulk",
+      "postId": 2,
+      "id": 10
     }
   ],
   "profile": {
