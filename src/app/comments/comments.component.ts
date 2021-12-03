@@ -40,7 +40,7 @@ export class CommentsComponent implements OnInit {
       author: this.commentatorName,
       postId: this.commentIdInt
     }
-    var url = "http://localhost:3000/comments"
+    var url = "http://localhost:3000/comments/"
     this.loader.start()
     this.http.post(url, requestJson).subscribe((response: any) => {
       location.reload();
@@ -52,5 +52,17 @@ export class CommentsComponent implements OnInit {
       console.log("Error from post comment api", error)
     })
   }
+
+  // deleteComment() {
+  //   var url = "http://localhost:3000/comments" + this.commentId
+  //   this.http.delete(url).subscribe((response: any) => {
+  //     location.reload();
+  //     this.loader.stop();
+  //     console.log("Response from delete comment api", response)
+  //   }, (error) => {
+  //     this.loader.stop();
+  //     console.log("Error from delete comment api", error)
+  //   })
+  // }
 
 }
