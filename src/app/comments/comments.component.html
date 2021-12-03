@@ -1,19 +1,5 @@
 <div>
   <div>
-    <label style="font-size: 14px; font-weight: 300; margin-bottom: 5px"
-      >COMMENTS</label
-    >
-    <div
-      style="
-        width: 50px;
-        border-width: 1px;
-        border-color: #5e26cd;
-        border-style: solid;
-        margin-bottom: 20px;
-      "
-    ></div>
-  </div>
-  <div *ngFor="let each of comments">
     <div class="d-flex" style="margin-bottom: 20px">
       <img
         src="../../assets/nature3.jpeg"
@@ -34,9 +20,9 @@
           margin-top: -5px;
         "
       >
-        <label style="font-weight: 600">{{ each.author }}</label>
+        <label style="font-weight: 600">{{ commentData.author }}</label>
         <h6 style="font-weight: 200; font-size: 14px; margin-top: 10px">
-          {{ each.body }}
+          {{ commentData.body }}
         </h6>
         <button
           style="
@@ -51,6 +37,7 @@
             width: 50px;
             text-align: center;
           "
+          (click)="deleteComment(commentData.id)"
         >
           Delete
         </button>
@@ -64,74 +51,5 @@
         margin-bottom: 20px;
       "
     ></div>
-  </div>
-  <div>
-    <div class="d-flex" style="margin-bottom: 20px">
-      <img
-        src="../../assets/nature3.jpeg"
-        style="
-          width: 35px;
-          height: 35px;
-          border-radius: 5em;
-          border-width: 2px;
-          border-color: #283140;
-          border-style: solid;
-        "
-      />
-      <div style="margin-top: -5px; margin-left: 10px">
-        <div class="d-flex">
-          <h6 style="font-weight: 400; font-size: 14px; margin-top: 10px">
-            Comment as:
-          </h6>
-          <input
-            placeholder="Your Name"
-            [(ngModel)]="commentatorName"
-            style="
-              border-radius: 5em;
-              border-width: 1px;
-              border-color: #645a77;
-              text-align: center;
-              height: 100%;
-              margin-top: 8px;
-              margin-left: 10px;
-            "
-          />
-        </div>
-        <input
-          placeholder="Enter your comment"
-          [(ngModel)]="commentText"
-          style="
-            border-radius: 5em;
-            border-width: 1px;
-            border-color: #645a77;
-            text-align: center;
-            margin-top: 8px;
-            width: 100%;
-          "
-        />
-      </div>
-      <button
-        style="
-          border-radius: 3em;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-            sans-serif;
-          margin-bottom: 5px;
-          font-weight: lighter;
-          font-size: small;
-          padding-left: 20px;
-          padding-right: 20px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          background-color: #5e26cd;
-          color: white;
-          height: 30px;
-          margin-left: auto;
-        "
-        (click)="postComment()"
-        type="submit"
-      >
-        Post
-      </button>
-    </div>
   </div>
 </div>

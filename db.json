@@ -63,18 +63,6 @@
   ],
   "comments": [
     {
-      "id": 1,
-      "body": "some comment",
-      "author": "Justin Wang",
-      "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment",
-      "author": "Justin Wang",
-      "postId": 1
-    },
-    {
       "body": "Yo bro",
       "author": "MyName",
       "postId": 2,
@@ -85,6 +73,12 @@
       "author": "Hulk",
       "postId": 2,
       "id": 10
+    },
+    {
+      "body": "New comment",
+      "author": "Jason",
+      "postId": 1,
+      "id": 11
     }
   ],
   "profile": {
