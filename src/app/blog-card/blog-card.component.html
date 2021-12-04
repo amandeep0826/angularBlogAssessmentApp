@@ -108,7 +108,6 @@
           EDIT
         </button>
         <button
-          [routerLink]="['/edit-blog', postData.id]"
           style="
             border-radius: 3em;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
@@ -124,6 +123,7 @@
             color: white;
             margin-left: 10px;
           "
+          (click)="deleteBlog(postData.id)"
         >
           DELETE
         </button>
