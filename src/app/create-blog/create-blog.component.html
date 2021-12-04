@@ -1,1 +1,175 @@
-<p>create-blog works!</p>
+<div
+  style="
+    padding-left: 20em;
+    padding-right: 20em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  "
+>
+  <div class="d-flex">
+    <input
+      placeholder="Category"
+      [(ngModel)]="blogCategory"
+      style="
+        height: 2em;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        color: #5e26cd;
+        border-radius: 10px;
+        border-width: 1px;
+      "
+    />
+    <span style="display: inline-block; width: 5px"></span>
+    <label>/</label>
+    <span style="display: inline-block; width: 5px"></span>
+    <input
+      placeholder="Date in (dd/mm/yyyy)"
+      [(ngModel)]="blogDate"
+      style="
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        margin-bottom: 10px;
+      "
+    />
+    <button
+      style="
+        border-radius: 3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-weight: lighter;
+        font-size: small;
+        background-color: rgb(122, 80, 80);
+        color: white;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        margin-left: auto;
+      "
+      type="submit"
+      [routerLink]="['/view-blog']"
+      (click)="postBlog()"
+    >
+      POST
+    </button>
+  </div>
+  <div>
+    <input
+      placeholder="Blog Title"
+      [(ngModel)]="blogTitle"
+      style="
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: #645a77;
+        text-align: center;
+        margin-top: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-size: 1.5rem;
+      "
+    />
+  </div>
+  <div>
+    <img
+      src="../../assets/nature1.jpeg"
+      style="width: 100%; height: 100%; margin-bottom: 1em"
+    />
+    <div>
+      <textarea
+        placeholder="Write Blog content here..."
+        [(ngModel)]="blogContent"
+        rows="5"
+        cols="85"
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          margin-bottom: 20px;
+          font-weight: lighter;
+          border-radius: 5px;
+          border-width: 1px;
+        "
+      >
+      </textarea>
+    </div>
+  </div>
+  <div>
+    <input
+      placeholder="Tags"
+      style="
+        border-radius: 5px;
+        border-width: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        margin-bottom: 20px;
+        font-weight: lighter;
+        color: #5e26cd; ;
+      "
+      [(ngModel)]="blogHashtags"
+    />
+  </div>
+  <div class="d-flex">
+    <img
+      src="../../assets/Carl_Wheezer.jpeg"
+      style="
+        height: 80px;
+        width: 80px;
+        border-radius: 5em;
+        border-width: 2px;
+        border-color: #283140;
+        border-style: solid;
+      "
+    />
+    <div style="margin-left: 10px">
+      <div
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-weight: lighter;
+        "
+        class="d-flex"
+      >
+        <label style="font-weight: bold">Posted by</label>
+        <input
+          placeholder="Auhtor Name"
+          style="
+            margin-left: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            border-width: 1px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            margin-bottom: 20px;
+            color: #5e26cd; ;
+          "
+          [(ngModel)]="blogAuthor"
+        />
+      </div>
+      <div
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          margin-bottom: 20px;
+          font-weight: lighter;
+        "
+      >
+        <textarea
+          placeholder="Something about the Author..."
+          style="
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            margin-bottom: 20px;
+            font-weight: lighter;
+            border-radius: 5px;
+            border-width: 1px;
+          "
+          [(ngModel)]="blogAuthorInfo"
+          rows="4"
+          cols="78"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+</div>
