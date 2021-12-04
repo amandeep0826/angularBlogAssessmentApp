@@ -53,6 +53,7 @@ export class EditBlogComponent implements OnInit {
       category: this.blogCategory,
       date: this.blogDate,
       hashtags: this.blogHashtags,
+      cardContent: this.blogContent.slice(0, 250),
       content: this.blogContent
     }
     this.loader.start()

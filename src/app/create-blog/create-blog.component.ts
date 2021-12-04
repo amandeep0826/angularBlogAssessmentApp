@@ -17,6 +17,7 @@ export class CreateBlogComponent implements OnInit {
   blogDate: any
   blogHashtags: any
   blogContent: any
+  blogCardContent: any
   blogIdCreateBlog: any
 
   constructor(private http: HttpClient, private route: ActivatedRoute, private router: Router, private loader: NgxUiLoaderService) {
@@ -32,6 +33,7 @@ export class CreateBlogComponent implements OnInit {
       category: this.blogCategory,
       date: this.blogDate,
       hashtags: this.blogHashtags,
+      cardContent: this.blogContent.slice(0, 250),
       content: this.blogContent
     }
     this.http.post(url, requestJson).subscribe((response: any) => {
