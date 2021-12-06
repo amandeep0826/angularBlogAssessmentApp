@@ -17,6 +17,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 import { BlogCardListComponent } from './blog-card-list/blog-card-list.component';
 import { CommentsComponent } from './comments/comments.component';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { EditBlogComponent } from './edit-blog/edit-blog.component';
     BlogCardListComponent,
     CommentsComponent,
     EditBlogComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ViewBlogComponent } from './view-blog/view-blog.component';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'blog-card/:blogId', component: ViewBlogComponent },
   { path: 'view-blog/:blogId', component: ViewBlogComponent },
-  { path: 'edit-blog/:blogIdEditBlog', component: EditBlogComponent }
+  { path: 'edit-blog/:blogIdEditBlog', component: EditBlogComponent },
+  { path: '**', component: PagenotfoundComponent },
 ];
 
 @NgModule({
