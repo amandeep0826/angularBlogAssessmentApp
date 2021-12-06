@@ -18,6 +18,7 @@ import { BlogCardListComponent } from './blog-card-list/blog-card-list.component
 import { CommentsComponent } from './comments/comments.component';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     CommentsComponent,
     EditBlogComponent,
     PagenotfoundComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

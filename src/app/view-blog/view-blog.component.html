@@ -174,8 +174,8 @@
         />
       </div>
       <button
+        appHighlight
         style="
-          border-radius: 3em;
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
             sans-serif;
           margin-bottom: 5px;
@@ -189,7 +189,9 @@
           color: white;
           height: 30px;
           margin-left: auto;
+          border-width: 0px;
         "
+        class="btn btn-primary"
         (click)="postComment()"
         type="submit"
       >

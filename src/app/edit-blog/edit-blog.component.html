@@ -16,6 +16,7 @@
           sans-serif;
         color: #5e26cd;
         border-radius: 10px;
+        border-width: 1px;
       "
       value="{{ blogDetail.category | uppercase }}"
     />
@@ -33,19 +34,19 @@
       value="{{ blogDetail.date }}"
     />
     <button
+      appHighlight
       style="
-        border-radius: 3em;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
           sans-serif;
         font-weight: lighter;
         font-size: small;
         background-color: rgb(122, 80, 80);
         color: white;
-        height: 30px;
-        width: 80px;
-        text-align: center;
         margin-left: auto;
+        margin-bottom: 10px;
+        border-width: 0px;
       "
+      class="btn btn-primary"
       (click)="updateBlog()"
       type="submit"
       [routerLink]="['/view-blog']"
