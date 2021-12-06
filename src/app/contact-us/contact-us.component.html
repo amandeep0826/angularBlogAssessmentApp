@@ -1,1 +1,107 @@
-<p>contact-us works!</p>
+<div
+  appHighlight
+  style="
+    padding-left: 20em;
+    padding-right: 20em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  "
+>
+  <form #contactForm="ngForm" (submit)="(contactForm.valid)">
+    <div>
+      <label style="font-size: x-large">Contact Us</label>
+    </div>
+    <div class="d-flex" style="margin-top: 3em">
+      <div style="width: 100%">
+        <input
+          style="
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            border-radius: 10px;
+            border-width: 1px;
+            padding-left: 10px;
+            width: 95%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          "
+          required
+          #name="ngModel"
+          placeholder="Your Name"
+          [(ngModel)]="userName"
+          name="name"
+        />
+        <div style="color: red" *ngIf="contactForm.submitted && name.errors">
+          <label *ngIf="name.errors.required">Name is Required</label>
+        </div>
+      </div>
+      <div style="margin-left: auto; margin-right: 0; width: 100%">
+        <input
+          style="
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            border-radius: 10px;
+            border-width: 1px;
+            padding-left: 10px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          "
+          required
+          #email="ngModel"
+          placeholder="Your Email"
+          [(ngModel)]="userEmail"
+          name="email"
+        />
+        <div style="color: red" *ngIf="contactForm.submitted && name.errors">
+          <label *ngIf="name.errors.required">Email is Required</label>
+        </div>
+        <div style="color: red">
+          <label *ngIf="emailError">{{ emailError }}</label>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 1em">
+      <textarea
+        style="
+          font-size: small;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          border-radius: 10px;
+          border-width: 1px;
+          padding-left: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+        "
+        rows="5"
+        required
+        #message="ngModel"
+        placeholder="Your Message"
+        [(ngModel)]="userMessage"
+        name="message"
+      ></textarea>
+      <div style="color: red" *ngIf="contactForm.submitted && message.errors">
+        <label *ngIf="message.errors.required">Message is Required</label>
+      </div>
+    </div>
+    <button
+      style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        margin-top: 1em;
+        font-weight: lighter;
+        font-size: small;
+        background-color: #5e26cd;
+        color: white;
+        width: 100%;
+        height: 40px;
+      "
+      class="btn btn-primary"
+      (click)="sendMessage()"
+    >
+      SEND
+    </button>
+  </form>
+</div>

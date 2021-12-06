@@ -31,7 +31,7 @@ import { EditBlogComponent } from './edit-blog/edit-blog.component';
     BlogCardComponent,
     BlogCardListComponent,
     CommentsComponent,
-    EditBlogComponent
+    EditBlogComponent,
   ],
   imports: [
     BrowserModule,
