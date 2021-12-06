@@ -38,7 +38,7 @@
           margin-bottom: 5px;
           color: #5e26cd; ;
         "
-        >BITCOIN</label
+        >{{ featuredPost.category | uppercase }}</label
       >
       <span style="display: inline-block; width: 5px"></span>
       <label>/</label>
@@ -52,7 +52,7 @@
           font-weight: lighter;
         "
       >
-        December 9, 2018</label
+        {{ featuredPost.date }}</label
       >
     </div>
     <div>
@@ -63,7 +63,7 @@
           margin-bottom: 10px;
         "
       >
-        See some alternatives to bitcoin that can be a good investment
+        {{ featuredPost.title }}
       </h3>
     </div>
     <div>
@@ -75,16 +75,13 @@
           font-weight: lighter;
         "
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen bo…
+        {{ featuredPost.cardContent }}...
       </h6>
     </div>
     <div>
       <button
+        [routerLink]="['/blog-card', featuredPost.id]"
         style="
-          border-radius: 3em;
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
             sans-serif;
           font-weight: lighter;
@@ -95,7 +92,9 @@
           padding-bottom: 5px;
           background-color: #5e26cd;
           color: white;
+          border-width: 0px;
         "
+        class="btn btn-primary"
       >
         READ MORE
       </button>

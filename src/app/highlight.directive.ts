@@ -8,7 +8,7 @@ export class HighlightDirective {
   @Input() color: any
 
   constructor(private element: ElementRef) {
-    console.log("Yay!!!! We got the element!! Lets party", this.element.nativeElement)
+    // console.log("Yay!!!! We got the element!! Lets party", this.element.nativeElement)
   }
 
   ngOnInit() {

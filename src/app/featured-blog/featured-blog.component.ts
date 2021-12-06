@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FeaturedBlogComponent implements OnInit {
 
-  @Input() featuredPostData: any
+  featuredPost: any
+  randomNum: any
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    var url = "http://localhost:3000/posts"
+    this.http.get(url).subscribe((response: any) => {
+      console.log("Response from featured posts api", response)
+      this.randomNum = Math.floor(Math.random() * response.length) + 1;
+      this.featuredPost = response[this.randomNum]
+    }, (error) => {
+      console.log("Error from featured posts api", error)
+    })
+  }
 
   ngOnInit(): void {
   }
